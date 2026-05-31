@@ -1,12 +1,223 @@
-<h1>Support</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galaxy Kids - Support Center</title>
 
-<p>Email: galaxykidsbrowser@gmail.com</p>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-<p>For bug reports, feature requests, or technical assistance,
-please contact us via email.</p>
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#050816,#0b1026,#1a1446);
+    color:white;
+    overflow-x:hidden;
+}
 
-<h2>Report a Bug</h2>
-<p>
-Include your app version, operating system version,
-and steps to reproduce the issue.
-</p>
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(#60a5fa 1px, transparent 1px),
+        radial-gradient(#c084fc 1px, transparent 1px);
+    background-size:120px 120px, 180px 180px, 250px 250px;
+    opacity:0.25;
+    animation:stars 80s linear infinite;
+    pointer-events:none;
+}
+
+@keyframes stars{
+    from{transform:translate(0,0);}
+    to{transform:translate(-200px,-200px);}
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:50px 20px;
+    position:relative;
+    z-index:2;
+}
+
+.hero{
+    text-align:center;
+    padding:50px 30px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(15px);
+    border-radius:24px;
+    border:1px solid rgba(255,255,255,0.1);
+    box-shadow:0 0 30px rgba(139,92,246,0.25);
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+    background:linear-gradient(90deg,#60a5fa,#a78bfa,#f472b6);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+    color:#d1d5db;
+    font-size:1.1rem;
+    line-height:1.8;
+}
+
+.section{
+    margin-top:30px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:30px;
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.section h2{
+    margin-bottom:15px;
+    color:#93c5fd;
+}
+
+.section p,
+.section li{
+    color:#d1d5db;
+    line-height:1.8;
+}
+
+ul{
+    padding-left:20px;
+}
+
+.contact-box{
+    background:rgba(96,165,250,0.1);
+    border:1px solid rgba(96,165,250,0.3);
+    padding:20px;
+    border-radius:15px;
+    margin-top:15px;
+}
+
+.email{
+    color:#93c5fd;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.footer{
+    text-align:center;
+    margin-top:40px;
+    color:#9ca3af;
+    padding-bottom:30px;
+}
+
+.home-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 24px;
+    background:linear-gradient(135deg,#3b82f6,#8b5cf6);
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.home-btn:hover{
+    transform:translateY(-2px);
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:2.2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="hero">
+        <h1>🌌 Galaxy Kids Support Center</h1>
+        <p>
+            Welcome to Galaxy Kids Support. We're here to help with questions,
+            technical issues, feedback, and feature requests.
+        </p>
+
+        <a href="index.html" class="home-btn">← Return Home</a>
+    </div>
+
+    <div class="section">
+        <h2>📧 Contact Support</h2>
+
+        <div class="contact-box">
+            <p>
+                Need assistance? Contact our support team:
+            </p>
+
+            <p style="margin-top:10px;">
+                Email:
+                <a class="email" href="mailto:galaxykidsbrowser@gmail.com">
+                    support@galaxykids.app
+                </a>
+            </p>
+
+            <p style="margin-top:10px;">
+                We aim to respond within 48 hours.
+            </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>❓ Frequently Asked Questions</h2>
+
+        <h3>How do I report a bug?</h3>
+        <p>
+            Please email us with a description of the issue,
+            screenshots if available, and the device you are using.
+        </p>
+
+        <br>
+
+        <h3>How do I request a new feature?</h3>
+        <p>
+            We welcome suggestions from parents, educators, and students.
+            Send your ideas to our support email.
+        </p>
+
+        <br>
+
+        <h3>Why is the AI giving an unexpected response?</h3>
+        <p>
+            AI-generated content may occasionally be inaccurate.
+            If you encounter a concerning response, please report it
+            so we can continue improving the experience.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>🛡️ Safety & Responsible AI</h2>
+
+        <p>
+            Galaxy Kids is designed to provide a safe and educational
+            environment for young learners. We continuously review and
+            improve our AI systems to promote age-appropriate content
+            and a positive learning experience.
+        </p>
+    </div>
+
+    <div class="footer">
+        © 2026 Galaxy Kids. All Rights Reserved.
+    </div>
+
+</div>
+
+</body>
+</html>
